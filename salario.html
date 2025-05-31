@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title> Atividade 30/05 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+            <!-- sticky-top -> fixo no topo com espaço com conteúdo abaixo)-->
+            <a class="navbar-brand" href="index.html">Atvididade 30/05</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Alterna navegação"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html" title="Página inicial">
+                    <i class="bi bi-house-door-fill"></i> Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calculos.html" title="Página de cálculos">
+                    <i class="bi bi-calculator-fill"></i> Cálculos
+                </a>
+                <li class="nav-item">
+                <a class="nav-link" href="cep.html" title="Página de cálculos">
+                    <i class="bi bi-calculator-fill"></i> CEP
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="salario.html" title="Página cálculo de salário">
+                    <i class="bi bi-currency-dollar"></i> Salário
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="api.html" title="Página sobre API">
+                    <i class="bi bi-cloud-sun-fill"></i> API
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+        </nav>
+        <div class="container mt-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <a href="calculos.html">Cálculos (Usando JQuery)</a>
+                    </li>
+                     </li>
+                     <li class="breadcrumb-item active" aria-current="page">
+                        <a href="cep.html"> CEP </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <a href="salario.html"> Salario </a>
+                    </li>
+                     </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <a href="api.html"> API </a>
+                    </li>
+                
+                </ol>
+            </nav>
+<div class="container mt-4">
+    <h3> ATIVIDADE I (Cálculando salários ) </h3>
+
+    <div class="form-group">
+        <label for="txtnome">Nome:</label>
+        <input type="text" id="txtnome" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="txtidade">Idade:</label>
+        <input type="number" id="txtidade" class="form-control" min="0" />
+    </div>
+
+    <div class="form-group">
+        <label for="txtsalario">Salário Bruto:</label>
+        <input type="number" id="txtsalario" class="form-control" step="0.5" min="0" />
+    </div>
+
+    <div class="form-group">
+        <label for="txtdependentes">Número de Dependentes:</label>
+        <input type="number" id="txtdependentes" class="form-control" min="0" />
+    </div>
+
+    <button id="calcular" class="btn btn-danger">Calcular</button>
+
+    <div class="alert alert-primary mt-4" role="alert">
+        <p id="resultadoNome">Nome: </p>
+        <p id="resultadoDependentes">Número de Dependentes: </p>
+        <p id="resultadoSalarioBruto">Salário Bruto: </p>
+        <p id="resultadoINSS">Desconto INSS </p>
+        <p id="resultadoValeTransporte">Desconto Vale Transporte (5%): </p>
+        <p id="resultadoBonus">Bônus por idade: </p>
+        <p id="resultadoValorDependentes">Valor adicional por dependentes: </p>
+        <p id="resultadoLiquido" class="font-weight-bold">Salário Líquido: </p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="javascript/salario.js"></script>
+
+</body>
+</html>
