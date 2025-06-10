@@ -76,42 +76,49 @@
                 
                 </ol>
             </nav>
-       <div class="container mt-3">
-            <div class="row mb-3 row justify-content-md-center">
-                <!--FORM COM 3 INPUTS E UM BOTÃO-->
-                <div class="col-md-6 col-sm-12 mb-2">
-                    <h3 class="mb-3">Exemplo com IF, Switch Case e FOR - JQuery</h3>
-                    <div class="form-group">
-                        <label for="txtvalor">Valor</label>
-                        <input type="number" step="0.5" class="form-control" id="txtvalor" name="txtvalor" value>
-                    </div>
-                    <div class="form-group">
-                        <label for="txtdesconto">Desconto</label>
-                        <input type="number" step="0.5" class="form-control" id="txtdesconto" name="txtdesconto" value>
-                    </div>
-                    <div class="form-group">
-                        <label for="txtmulta">Multa</label>
-                        <input type="number" step="0.5" class="form-control" id="txtmulta" name="txtmulta" value>
-                    </div>
-
-                    <button id="calcular" class="btn btn-danger">Calcular</button>
-
-                </div>
-                <div class="col-md-12 col-sm-12 mb-2">
-                    <div class="alert alert-primary" role="alert">
-                        <p id="txtresultado">Resultado: </p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-sm-12 mb-2">
-                    <div class="alert alert-warning" role="alert">
-                        <p id="txtmsg">Mensagem: </p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-sm-12 mb-2">
-                    <div class="alert alert-success" role="alert">
-                        <p id="txtfatorial">N! </p>
-                    </div>
-                </div>
+      <div class="container mt-5">
+    <!-- Card do formulário -->
+    <div class="card p-4 shadow-sm">
+        <h5 class="mb-4">Calculadora</h5>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label for="txtvalor" class="form-label">Valor</label>
+                <input type="number" step="0.5" class="form-control" id="txtvalor" name="txtvalor" placeholder="Digite o valor">
+            </div>
+            <div class="col-md-4">
+                <label for="txtdesconto" class="form-label">Desconto</label>
+                <input type="number" step="0.5" class="form-control" id="txtdesconto" name="txtdesconto" placeholder="Digite o desconto">
+            </div>
+            <div class="col-md-4">
+                <label for="txtmulta" class="form-label">Multa</label>
+                <input type="number" step="0.5" class="form-control" id="txtmulta" name="txtmulta" placeholder="Digite a multa">
             </div>
         </div>
+
+        <button id="calcular" class="btn btn-primary mt-4 w-100">Calcular</button>
+    </div>
+    <div class="card mt-4 p-3 shadow-sm">
+        <h6>Resultados</h6>
+        <div class="alert alert-primary py-2 mt-3" role="alert">
+            <p id="txtresultado" class="mb-0">Resultado do cálculo</p>
+        </div>
+        <div class="alert alert-primary py-2" role="alert">
+            <p id="txtmsg" class="mb-0">Mensagem:</p>
+        </div>
+        <div class="alert alert-primary py-2" role="alert">
+            <p id="txtfatorial" class="mb-0">Fatorial</p>
+        </div>
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <script src="javascript/calculos.js"></script>
+    </body>
+</html>
    

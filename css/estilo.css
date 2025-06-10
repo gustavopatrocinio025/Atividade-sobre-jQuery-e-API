@@ -17,7 +17,7 @@ section .section-title {
       background-color: #ffffff;
       color: black;
     }
-    
+
 .custom-container {
       background-color: #0056b3;
       padding: 30px 40px;
@@ -135,6 +135,19 @@ section .section-title {
 
 #footer ul.social li {
     padding: 3px 0;
+}
+
+.card {
+border-radius: 12px;
+}
+
+.alert {
+border-radius: 20px;
+font-weight: 500;
+}
+
+h5, h6 {
+font-weight: 600;
 }
 
 #footer ul.social li a i {
