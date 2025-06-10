@@ -10,7 +10,109 @@ section .section-title {
     color: #007b5e;
     margin-bottom: 50px;
     text-transform: uppercase;
-}
+} 
+.body, html {
+      height: 100%;
+      margin: 0;
+      background-color: #ffffff;
+      color: black;
+    }
+    
+.custom-container {
+      background-color: #0056b3;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      max-width: 600px; 
+      margin: 0 auto;
+      text-align: center;
+    }
+
+.label, input, button {
+      font-size: 1.3rem;
+    }
+
+.input {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      margin: 10px 0;
+     
+    }
+
+.button {
+      padding: 10px 20px;
+      border-radius: 6px;
+      background-color: red
+      
+    }
+
+.card-text {
+      margin: 8px 0;
+      font-weight: 600;
+    }
+
+.custom-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .consulte {
+    font-size: 28px;
+    font-weight: 600;
+    color: #dc3545; /* vermelho padrão do Bootstrap */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  button#btnSearch {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  button#btnSearch:hover {
+    background-color: #bd2130;
+  }
+
+  .card {
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+    color: #dc3545;
+    font-weight: 600;
+  }
+
+.text-danger {
+      color: #ff0000;
+    }
 
 #footer {
     background: #3333ff !important;

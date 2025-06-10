@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="calculos.html" title="Página de cálculos">
+                <a class="nav-link" href="sobre.html" title="Página de cálculos">
                     <i class="bi bi-calculator-fill"></i> Cálculos
                 </a>
                 <li class="nav-item">
@@ -77,46 +77,47 @@
                 
                 </ol>
             </nav>
-<div class="container mt-4">
-    <h3> ATIVIDADE I (Cálculando salários ) </h3>
+ <main>
+        <form id="form-salario">
+            <label class="salarioca" for="nome">Nome:</label>
+            <input type="text" id="nome" required><br><br>
 
-    <div class="form-group">
-        <label for="txtnome">Nome:</label>
-        <input type="text" id="txtnome" class="form-control" />
-    </div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required><br><br>
 
-    <div class="form-group">
-        <label for="txtidade">Idade:</label>
-        <input type="number" id="txtidade" class="form-control" min="0" />
-    </div>
+            <label for="salario">Salário Bruto (R$):</label>
+            <input type="number" id="salario" step="0.5" required><br><br>
 
-    <div class="form-group">
-        <label for="txtsalario">Salário Bruto:</label>
-        <input type="number" id="txtsalario" class="form-control" step="0.5" min="0" />
-    </div>
+            <label for="dependentes">Número de Dependentes:</label>
+            <input type="number" id="dependentes" min="0" required><br><br>
 
-    <div class="form-group">
-        <label for="txtdependentes">Número de Dependentes:</label>
-        <input type="number" id="txtdependentes" class="form-control" min="0" />
-    </div>
+            <button type="submit">Calcular Salário Líquido</button>
+        </form>
+    </main>
 
-    <button id="calcular" class="btn btn-danger">Calcular</button>
+    <script>
+        document.getElementById('form-salario').addEventListener('submit', function(e) {
+            e.preventDefault();
 
-    <div class="alert alert-primary mt-4" role="alert">
-        <p id="resultadoNome">Nome: </p>
-        <p id="resultadoDependentes">Número de Dependentes: </p>
-        <p id="resultadoSalarioBruto">Salário Bruto: </p>
-        <p id="resultadoINSS">Desconto INSS </p>
-        <p id="resultadoValeTransporte">Desconto Vale Transporte (5%): </p>
-        <p id="resultadoBonus">Bônus por idade: </p>
-        <p id="resultadoValorDependentes">Valor adicional por dependentes: </p>
-        <p id="resultadoLiquido" class="font-weight-bold">Salário Líquido: </p>
-    </div>
-</div>
+            const nome = document.getElementById('nome').value;
+            const idade = Number(document.getElementById('idade').value);
+            const salarioBruto = parseFloat(document.getElementById('salario').value);
+            const dependentes = parseInt(document.getElementById('dependentes').value);
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="javascript/salario.js"></script>
+            const bonusIdade = idade > 50 ? 300 : 200;
+            const inss = salarioBruto * 0.08;
+            const vt = salarioBruto * 0.05;
+            const adicionalDependentes = dependentes * 50;
 
+            const salarioLiquido = salarioBruto - inss - vt + bonusIdade + adicionalDependentes;
+
+            alert(`Nome: ${nome}
+Número de Dependentes: ${dependentes}
+Salário Bruto: R$ ${salarioBruto.toFixed(2)}
+INSS (8%): R$ ${inss.toFixed(2)}
+Vale Transporte (5%): R$ ${vt.toFixed(2)}
+Salário Líquido: R$ ${salarioLiquido.toFixed(2)}`);
+        });
+    </script>
 </body>
 </html>

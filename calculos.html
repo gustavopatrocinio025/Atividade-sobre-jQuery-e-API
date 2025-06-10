@@ -11,7 +11,6 @@
     </head>
     <body>
        <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
-            <!-- sticky-top -> fixo no topo com espaço com conteúdo abaixo)-->
             <a class="navbar-brand" href="index.html">Atvididade 30/05</a>
             <button
                 class="navbar-toggler"
@@ -77,58 +76,42 @@
                 
                 </ol>
             </nav>
-        <!--AQUI COMEÇA O CONTEÚDO-->
-        <div class="container mt-3">
+       <div class="container mt-3">
             <div class="row mb-3 row justify-content-md-center">
                 <!--FORM COM 3 INPUTS E UM BOTÃO-->
                 <div class="col-md-6 col-sm-12 mb-2">
                     <h3 class="mb-3">Exemplo com IF, Switch Case e FOR - JQuery</h3>
                     <div class="form-group">
-                        <label for="txtvalor1">Valor 1</label>
-                        <input
-                            type="number"
-                            step="0.5"
-                            class="form-control"
-                            id="txtvalor1"
-                            name="txtvalor1"
-                            value
-                        >
+                        <label for="txtvalor">Valor</label>
+                        <input type="number" step="0.5" class="form-control" id="txtvalor" name="txtvalor" value>
                     </div>
                     <div class="form-group">
-                        <label for="txtvalor2">Valor 2</label>
-                        <input
-                            type="number"
-                            step="0.5"
-                            class="form-control"
-                            id="txtvalor2"
-                            name="txtvalor2"
-                            value
-                        >
+                        <label for="txtdesconto">Desconto</label>
+                        <input type="number" step="0.5" class="form-control" id="txtdesconto" name="txtdesconto" value>
                     </div>
                     <div class="form-group">
-                        <label for="txtvalor3">Valor 3</label>
-                        <input
-                            type="number"
-                            step="0.5"
-                            class="form-control"
-                            id="txtvalor3"
-                            name="txtvalor3"
-                            value
-                        >
+                        <label for="txtmulta">Multa</label>
+                        <input type="number" step="0.5" class="form-control" id="txtmulta" name="txtmulta" value>
                     </div>
+
                     <button id="calcular" class="btn btn-danger">Calcular</button>
-                    <!--ALERTAS COM PARÁGRAFO PARA MOSTRAR OS RESULTADOS-->
-                    <div class="alert alert-primary mt-3" role="alert">
-                        <p id="txtmedia">Média:</p>
+
+                </div>
+                <div class="col-md-12 col-sm-12 mb-2">
+                    <div class="alert alert-primary" role="alert">
+                        <p id="txtresultado">Resultado: </p>
                     </div>
+                </div>
+                <div class="col-md-12 col-sm-12 mb-2">
                     <div class="alert alert-warning" role="alert">
-                        <p id="txtmsg">Mensagem:</p>
+                        <p id="txtmsg">Mensagem: </p>
                     </div>
+                </div>
+                <div class="col-md-12 col-sm-12 mb-2">
                     <div class="alert alert-success" role="alert">
-                        <p id="txtfatorial">N!</p>
+                        <p id="txtfatorial">N! </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
    
